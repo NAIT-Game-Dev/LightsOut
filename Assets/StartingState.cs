@@ -1,8 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class StartingState : MonoBehaviour
@@ -25,7 +22,7 @@ public class StartingState : MonoBehaviour
     difficulty levelSetting = difficulty.easy;
 
     // Initialize the number of patterns for each difficulty.
-    int[][] easyPattern = new int[13][];
+    int[][] easyPattern = new int[32][];
     int[][] hardPattern = new int[9][];
 
     private void Start()
@@ -44,6 +41,25 @@ public class StartingState : MonoBehaviour
         easyPattern[10] = new int[] { 0, 5 };
         easyPattern[11] = new int[] { 0, 7 };
         easyPattern[12] = new int[] { 4, 8 };
+        easyPattern[13] = new int[] { 0, 2, 3 };
+        easyPattern[14] = new int[] { 0, 2, 3, 5, 7, 8 };
+        easyPattern[15] = new int[] { 1, 2, 4, 8 };
+        easyPattern[16] = new int[] { 2, 3, 4, 8 };
+        easyPattern[17] = new int[] { 0, 2 };
+        easyPattern[18] = new int[] { 6, 8 };
+        easyPattern[19] = new int[] { 0, 1, 2, 4, 6, 8 };
+        easyPattern[20] = new int[] { 1, 3, 4, 5, 7 };
+        easyPattern[21] = new int[] { 3, 5, 6, 8 };
+        easyPattern[22] = new int[] { 3, 5 };
+        easyPattern[23] = new int[] { 1, 4, 7 };
+        easyPattern[24] = new int[] { 1, 4, 5, 8 };
+        easyPattern[25] = new int[] { 0, 3, 4, 5, 8 };
+        easyPattern[26] = new int[] { 0, 1, 7, 8 };
+        easyPattern[27] = new int[] { 0, 1, 3, 6, 8 };
+        easyPattern[28] = new int[] { 0, 1, 3, 5, 6, 7 };
+        easyPattern[29] = new int[] { 0, 4, 6 };
+        easyPattern[30] = new int[] { 0, 2, 5, 6, 8 };
+        easyPattern[31] = new int[] { 0, 2, 6, 7 };
 
         // Set the patterns for the hard difficulty.
         hardPattern[0] = new int[] { 2, 4, 6, 8, 12, 16, 20, 24 };
